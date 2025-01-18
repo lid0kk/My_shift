@@ -25,5 +25,5 @@ function login() {
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('loggedInUser', JSON.stringify(user));
     alert("התחברת בהצלחה!");
-    window.location.href = "home.html";  
+    window.location.href = "index.html";  
 }
