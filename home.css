@@ -1,0 +1,253 @@
+* {
+    direction: rtl;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #eef2f3;
+    color: #333;
+}
+
+
+
+button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 14px;
+}
+
+button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+button:hover{
+    background-color: #2ca2f1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #34495e;
+    color: white;
+    border-bottom: 5px solid #2ecc71;
+}
+
+main {
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.filter-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filter-form input,
+.filter-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+}
+
+.filter-btn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+}
+
+.filter-btn:hover {
+    background-color: #16a085;
+}
+
+.shift-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+}
+
+.shift-table th,
+.shift-table td {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+    text-align: center;
+}
+
+.shift-table th {
+    background-color: #34495e;
+    color: white;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.shift-table td {
+    word-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+#p-salary {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#t-salary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#add-shift-div {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.add-shift-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.add-shift-button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .shift-table th,
+    .shift-table td {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+
+    #p-salary {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .add-shift-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-form input,
+    .filter-form select {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .shift-table {
+        font-size: 0.75rem;
+        overflow-x: scroll;
+    }
+
+    .shift-table th,
+    .shift-table td {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
+    #p-salary {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .add-shift-button {
+        width: 100%;
+    }
+}
