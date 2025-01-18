@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Shift Management</title>
+    
+</head>
+<body>
+  
+    <main>
+        <form class="filter-form">
+            <label for="branch">בחר סניף:</label>
+            <select id="branch" name="branch" >
+                <option>סניף ירושלים</option>
+                <option>סניף תל אביב</option>
+                <option>סניף חיפה</option>
+            </select>
+          
+            <label for="role">תפקיד:</label>
+            <input type="text" id="role" name="role" placeholder="הזן תפקיד">
+
+            <button type="button" class="filter-btn" onclick="filterShifts()">סנן</button>
+        </form>
+
+        <table class="shift-table">
+            <thead>
+                <tr>
+                    <th>תאריך</th>
+                    <th>שעת התחלה</th>
+                    <th>שעת סיום</th>
+                    <th>שכר שעתי</th>
+                    <th>תפקיד</th>
+                    <th>סניף</th>
+                    <th>שכר כולל לכל המשמרת</th>
+                    <th>הערות</th>
+                    <th>מחיקה</th>
+                    <th>עדכון</th>
+                </tr>
+            </thead>
+            <tbody id="t-body">
+                <p id="shifts"></p>
+            </tbody>
+        </table>
+        <div id="p-salary">
+        <p id="t-salary">שכר כולל לכל המשמרות: <span id="total-salary">0</span> ש"ח</p>
+        </div>
+        <div id="add-shift-div">
+        <button class="add-shift-button" onclick="location.href='shift-update-add.html'">הוספת משמרת</button>
+    </div>
+    </main>
+
+    <script src="./home.js"></script>
+</body>
+</html>
