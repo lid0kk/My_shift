@@ -4,7 +4,7 @@ fetch('nav.html')
     .then(data => {
         document.body.insertAdjacentHTML('afterbegin', data);
         const script = document.createElement('script');
-        script.src = '../JavaScript/nav.js';
+        script.src = './nav.js';
         document.body.appendChild(script);
     });
 
