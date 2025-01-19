@@ -139,6 +139,6 @@ fetch('nav.html')
         localStorage.removeItem('shiftToUpdate');
     
         alert(shiftToUpdate ? "המשמרת עודכנה בהצלחה!" : "המשמרת נוספה בהצלחה!");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
     
